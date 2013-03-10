@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/app/assets/stylesheets/bootstrap.css" rel="stylesheet" media="screen">
+    <style>
+		html,
+		body{
+			height: 100%;
+		}
+		.TopBar{
+			background-color:#B28900;
+			color:#0E105D;
+		}
+		.Navi{
+			background-color:#D9B336;
+			color:#OE105D;
+		}
+		/*.container{
+			width: auto;
+			max-width: 680px;
+		}*/
+		*{
+			margin:0;
+			padding:0;
+		}
+		#title{
+			padding-left: 5%;
+			text-align:left;
+
+		}
+		#subtitle{
+			padding-left: 10%;
+			text-align:left;
+		}
+		.nav-pills, .nav{
+			padding-left:3%;
+			background-color:#D9B336;
+			margin:0px;
+			a:link{
+				color:#0E105D;
+			}
+		}
+	</style>
+  </head>
+  <body>
+	 <!--   <h1>Hello, world!</h1>-->
+		<div class ="TopBar">
+			<div class="row">
+				<h1 id="title">BPollock.com</h1>
+			</div>
+		</div>
+		<div class="TopBar">
+			<div class="row">
+				<h3 id="subtitle">Official homepage of Ben Pollock</h3>
+			</div>
+		</div>
+   <ul class="nav nav-pills">
+      <li class="active"><a href="#">Home</a></li>
+      <li id="test"><a href="#">About</a></li>
+      <li><a href="#">Projects & Portfolio</a></li>
+      <li><a href="#">Industry Experience & Resume</a></li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">Industry Trends</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+
+    This is my website.
+    Where the bitchez are.
+    <!--<div class="Navi">
+    	<div class="container">
+    		Home&nbsp;&nbsp;About&nbsp;&nbsp;Projects & Portfolio&nbsp;&nbsp;&nbsp;&nbsp;Industry Experience & Resume&nbsp;&nbsp;Github&nbsp;&nbsp;LinkedIn&nbsp;&nbsp;Industry Trends&nbsp;&nbsp;Contact
+    	</div>
+    </div>-->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/app/assets/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

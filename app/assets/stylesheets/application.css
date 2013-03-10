@@ -11,3 +11,49 @@
  *= require_self
  *= require_tree .
  */
+ *=require_tree .
+ *=require_self
+ 	html,
+		body{
+			height: 100%;
+		}
+		.TopBar{
+			/*background-color:#B28900;
+			color:#0E105D;*/
+			background-color:#252525;
+			color:#18C1F8;
+		}
+		.Navi{
+			background-color:#252525;
+			color:#OE105D;
+		}
+		/*.container{
+			width: auto;
+			max-width: 680px;
+		}*/
+		*{
+			margin:0;
+			padding:0;
+		}
+		#title{
+			padding-left: 5%;
+			text-align:left;
+
+		}
+		#subtitle{
+			padding-left: 10%;
+			text-align:left;
+		}
+		.nav-pills, .nav{
+			padding-left:3%;
+			background-color:#3A3A3A;
+			margin:0px;
+			a:link{
+				color:#0E105D;
+			}
+		}
+		#test{
+			padding-top:2%;
+			padding-left:3%;
+		}
+	}

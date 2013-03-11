@@ -11,8 +11,6 @@
  *= require_self
  *= require_tree .
  */
- *=require_tree .
- *=require_self
  	html,
 		body{
 			height: 100%;

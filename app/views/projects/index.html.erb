@@ -1,11 +1,32 @@
 <!-- Show all projects -->
 
-Show all projects
-<% @projects.each do |project| %>
-	<li>
-		<%= project.name %>
-	</li>
-	<li>
-		<%= project.pdate %>
-	</li>
-<% end %>
+<div class="row" id="test">
+    	<div class="span12">
+    		<h2>All Projects</h2><br>
+				<% @projects.each do |project| %>
+						<h4><u><%= project.name %></u></h4>
+						Technology: <%= project.ptech %>
+						<br>
+
+						Type: <%= project.ptype %>
+
+						<br>
+						Date: <%= project.pdate %>
+						<br>
+						<!--Create Source Link if it Exists -->
+						<% if project.psource %>
+							Source: <%= link_to(project.psource, project.psource) %>
+						<% else %>
+							Source not available for project.
+						<% end %>
+					<br>
+					<!-- Print Content with HTML Markup -->
+					<%= project.content.html_safe %>
+					<br><br>
+				<% end %>
+				<%= image_tag ("rails.png") %>
+				<%= link_to('projects', '/projects') %>
+
+
+    	</div>
+    </div>

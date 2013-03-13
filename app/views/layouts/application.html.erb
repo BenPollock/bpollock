@@ -20,13 +20,13 @@
 		</div>
    <ul class="nav nav-pills">
       <li class="active"><%= link_to("Home", '/') %></li>
-      <li><a href="#" rel="tooltip" data-placement="bottom" title="More Information about Ben">About</a></li>
+      <li><%= link_to('About', '/about', rel: 'tooltip', :data => {'placement' => 'bottom'}, title: 'More Information about Ben') %></li>
       <li><!--<a href="#" rel="tooltip" data-placement="bottom" title="Completed and in Progress Software Applications">Projects & Portfolio</a>-->
         <!-- :data => {'placement' => 'bottom'} required for rails link_to-->
       <%= link_to('Projects & Portfolio', '/projects', rel: 'tooltip', :data => {'placement' => 'bottom'}, title: 'Completed and in Progress Software Applications') %>
       </li>
       <li><a href="#" rel="tooltip" data-placement="bottom" title="Work Experience and Downloadable Resume">Industry Experience & Resume</a></li>
-      <li><a href="#" rel="tooltip" data-placement="bottom" title="Official Github Account Page">GitHub</a></li>
+      <li><a href="https://github.com/BenPollock" rel="tooltip" data-placement="bottom" title="Official Github Account Page">GitHub</a></li>
       <li><a href="#" rel="tooltip" data-placement="bottom" title="Official LinkedIn Account Page">LinkedIn</a></li>
       <li><a href="#" rel="tooltip" data-placement="bottom" title="Blog Detailing Current Trends in the Software & Technology Industry">Industry Trends</a></li>
       <li><a href="#" rel="tooltip" data-placement="bottom" title="Contact Information">Contact</a></li>

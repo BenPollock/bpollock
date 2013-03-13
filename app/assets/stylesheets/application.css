@@ -47,3 +47,15 @@
 			padding-top:2%;
 			padding-left:3%;
 		}
+		#languagetitle td{
+			text-align: center;
+		}
+		#noborder{
+			border-color:#252525;
+		}
+		#languageleft{
+			width:40%;
+		}
+		/*#languageright{
+			text-al
+		}*/

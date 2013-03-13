@@ -1,0 +1,11 @@
+<!-- Show all projects -->
+
+Show all projects
+<% @projects.each do |project| %>
+	<li>
+		<%= project.name %>
+	</li>
+	<li>
+		<%= project.pdate %>
+	</li>
+<% end %>

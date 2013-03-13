@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  ptech: MyString
+  pdate: MyString
+  ptype: MyString
+  psource: MyString
+  content: MyString
+
+two:
+  name: MyString
+  ptech: MyString
+  pdate: MyString
+  ptype: MyString
+  psource: MyString
+  content: MyString

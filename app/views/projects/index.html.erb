@@ -27,7 +27,16 @@
 					<% project.screenshots.each do |screenshot| %>
 						<ul class="thumbnails">
 							<li class="span4">
-							<%= image_tag(screenshot.imageloc, size: "200x200") %>
+
+								<a data-toggle ="lightbox" href="#screenbox<%= screenshot.id %>">
+									<%= image_tag(screenshot.imageloc, size:"200x200") %>
+								</a>
+								<div id="screenbox<%=screenshot.id%>" class="lightbox hide fade">
+									<div class="lightbox-content">
+										<%= image_tag(screenshot.imageloc) %>
+									</div>
+								</div>
+
 							</li>
 						</ul>
 					<% end %>

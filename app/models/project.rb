@@ -7,6 +7,7 @@ class Project < ActiveRecord::Base
   validates :pdate, presence: true
   validates :ptech, presence: true
   validates :ptype, presence: true
+  has_many :screenshots
 
 
 end

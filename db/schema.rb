@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313002335) do
+ActiveRecord::Schema.define(:version => 20130313184631) do
 
   create_table "projects", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(:version => 20130313002335) do
     t.string   "ptype"
     t.string   "psource"
     t.string   "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "screenshots", :force => true do |t|
+    t.integer  "project_id"
+    t.string   "imageloc"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

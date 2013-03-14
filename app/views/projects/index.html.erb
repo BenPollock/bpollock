@@ -23,6 +23,15 @@
 					<!-- Print Content with HTML Markup -->
 					<%= project.content.html_safe %>
 					<br><br>
+				<!-- Print screenshots if they exist -->
+					<% project.screenshots.each do |screenshot| %>
+						<ul class="thumbnails">
+							<li class="span4">
+							<%= image_tag(screenshot.imageloc, size: "200x200") %>
+							</li>
+							
+						</ul>
+					<% end %>
 				<% end %>
 				<%= image_tag ("rails.png") %>
 				<%= link_to('projects', '/projects') %>

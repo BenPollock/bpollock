@@ -9,56 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require bootstrap-lightbox.min
+ *= require facebox.css
+ *= require bootstrap.min
+ *= require custom
+ *= require bootstrap-responsive.min
  */
- 	html,
-		body{
-			height: 100%;
-		}
-		.TopBar{
-			/*background-color:#B28900;
-			color:#0E105D;*/
-			background-color:#252525;
-			color:#18C1F8;
-		}
-		/*.container{
-			width: auto;
-			max-width: 680px;
-		}*/
-		*{
-			margin:0;
-			padding:0;
-		}
-		#title{
-			padding-left: 5%;
-			text-align:left;
-
-		}
-		#subtitle{
-			padding-left: 10%;
-			text-align:left;
-		}
-		.nav-pills, .nav{
-			padding-left:3%;
-			background-color:#3A3A3A;
-			margin:0px;
-		}
-		#test{
-			padding-top:1%;
-			padding-left:3%;
-		}
-		#languagetitle td{
-			text-align: center;
-		}
-		#noborder{
-			border-color:#252525;
-		}
-		#languageleft{
-			width:40%;
-		}
-		#mydiv{
-			width:100%;
-		}
-		/*#languageright{
-			text-al
-		}*/

@@ -1,49 +1,45 @@
 <!-- Show all projects -->
 
-<div class="row" id="test">
-    	<div class="span12">
-    		<h2>All Projects</h2><br>
-				<% @projects.each do |project| %>
-						<h4><u><%= project.name %></u></h4>
-						Technology: <%= project.ptech %>
-						<br>
 
-						Type: <%= project.ptype %>
+<h2>All Projects</h2><br>
+	<% @projects.each do |project| %>
+			<h4><u><%= project.name %></u></h4>
+			Technology: <%= project.ptech %>
+			<br>
 
-						<br>
-						Date: <%= project.pdate %>
-						<br>
-						<!--Create Source Link if it Exists -->
-						<% if project.psource %>
-							Source: <%= link_to(project.psource, project.psource) %>
-						<% else %>
-							Source not available for project.
-						<% end %>
-					<br>
-					<!-- Print Content with HTML Markup -->
-					<%= project.content.html_safe %>
-					<br><br>
-				<!-- Print screenshots if they exist -->
-					<% project.screenshots.each do |screenshot| %>
-						<ul class="thumbnails">
-							<li class="span4">
+			Type: <%= project.ptype %>
 
-								<a data-toggle ="lightbox" href="#screenbox<%= screenshot.id %>">
-									<%= image_tag(screenshot.imageloc, size:"200x200") %>
-								</a>
-								<div id="screenbox<%=screenshot.id%>" class="lightbox hide fade">
-									<div class="lightbox-content">
-										<%= image_tag(screenshot.imageloc) %>
-									</div>
-								</div>
+			<br>
+			Date: <%= project.pdate %>
+			<br>
+			<!--Create Source Link if it Exists -->
+			<% if project.psource %>
+				Source: <%= link_to(project.psource, project.psource) %>
+			<% else %>
+				Source not available for project.
+			<% end %>
+		<br>
+		<!-- Print Content with HTML Markup -->
+		<%= project.content.html_safe %>
+		<br><br>
+	<!-- Print screenshots if they exist -->
+		<% project.screenshots.each do |screenshot| %>
+			<ul class="thumbnails">
+				<li class="span4">
 
-							</li>
-						</ul>
-					<% end %>
-				<% end %>
-				<%= image_tag ("rails.png") %>
-				<%= link_to('projects', '/projects') %>
+					<a data-toggle ="lightbox" href="#screenbox<%= screenshot.id %>">
+						<%= image_tag(screenshot.imageloc, size:"200x200") %>
+					</a>
+					<div id="screenbox<%=screenshot.id%>" class="lightbox hide fade">
+						<div class="lightbox-content">
+							<%= image_tag(screenshot.imageloc) %>
+						</div>
+					</div>
 
+				</li>
+			</ul>
+		<% end %>
+	<% end %>
+	<%= image_tag ("rails.png") %>
+	<%= link_to('projects', '/projects') %>
 
-    	</div>
-    </div>

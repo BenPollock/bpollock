@@ -23,8 +23,10 @@
         <%= link_to("Ben Pollock", '/', class: 'brand') %>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="active"><%= link_to("Home", '/') %></li>
-              <li><%= link_to('About', '/about') %></li>
+            <li><%= link_to("Home", '/') %></li>
+              <li class="disabled"><!--<%= link_to('About', '/about') %>-->
+                <a href="#">About</a>
+              </li>
               <li class="disabled">
               <!--<%= link_to('Projects & Portfolio', '/projects', rel: 'tooltip', :data => {'placement' => 'bottom'}, title: 'Completed and in Progress Software Applications') %>-->
                 <a href="#">Projects & Portfolio</a>

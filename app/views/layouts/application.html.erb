@@ -23,15 +23,15 @@
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li class="active"><%= link_to("Home", '/') %></li>
-              <li><%= link_to('About', '/about', rel: 'tooltip', :data => {'placement' => 'bottom'}, title: 'More Information about Ben') %></li>
+              <li><%= link_to('About', '/about') %></li>
               <li>
-              <%= link_to('Projects & Portfolio', '/projects', rel: 'tooltip', :data => {'placement' => 'bottom'}, title: 'Completed and in Progress Software Applications') %>
+              <!--<%= link_to('Projects & Portfolio', '/projects', rel: 'tooltip', :data => {'placement' => 'bottom'}, title: 'Completed and in Progress Software Applications') %>-->
               </li>
-              <li><a href="#" rel="tooltip" data-placement="bottom" title="Work Experience and Downloadable Resume">Industry Experience & Resume</a></li>
-              <li><a href="https://github.com/BenPollock" rel="tooltip" data-placement="bottom" title="Official Github Account Page">GitHub</a></li>
-              <li><a href="#" rel="tooltip" data-placement="bottom" title="Official LinkedIn Account Page">LinkedIn</a></li>
-              <li><a href="#" rel="tooltip" data-placement="bottom" title="Blog Detailing Current Trends in the Software & Technology Industry">Industry Trends</a></li>
-              <li><a href="#" rel="tooltip" data-placement="bottom" title="Contact Information">Contact</a></li>
+              <li><a href="#">Industry Experience & Resume</a></li>
+              <li><a href="https://github.com/BenPollock">GitHub</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Industry Trends</a></li>
+              <li><a href="#">Contact</a></li>
           <ul>
         </div>
       </div>
@@ -69,7 +69,7 @@
 
     <script>
     	jQuery(function ($){
-    		$("a").tooltip()
+    	//	$("a").tooltip()
         $('.carousel').carousel()
     	});
     </script>

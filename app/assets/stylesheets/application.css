@@ -190,3 +190,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 .subhead .navbar {
   display: none;
 }
+
+.modal.large{
+	width: 780px;
+	margin-left: -390px;
+}
